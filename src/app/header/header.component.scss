@@ -1,0 +1,49 @@
+/*********COLOR*********************/
+
+$color-text:#424242;
+$color-title:#6F0404;
+$color-result:rgb(54, 68, 49);
+$color-bg:#E6E6E6;
+
+/*******************FONT*************/
+
+@mixin font () {
+    font-family: 'Raleway', sans-serif;
+}
+
+@mixin font-title () {
+    font-family: 'Permanent Marker', cursive;
+}
+
+@mixin font-hello {
+    font-family: 'Gochi Hand', cursive;
+}
+
+
+/***********HEADER*************************/
+
+header {
+    background-color: $color-text;
+    opacity: 0.8;
+    margin: -10px -10px 150px -10px;
+    padding: 20px 0;
+    h1 {
+        text-align: center;
+        .title {
+            @include font-title();
+            color: $color-bg;
+            font-size: 5rem;
+            font-weight: normal;
+            text-decoration: none;
+        }
+    }
+    .disconnect {
+        display: block;
+        text-decoration: none;
+        color: $color-bg;
+        @include font();
+        font-size: 1.3rem;
+        text-align: right;
+        margin-right: 20px;
+    }
+}

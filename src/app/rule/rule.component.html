@@ -1,0 +1,17 @@
+<div class="rule">
+    <p>Veux-tu voir les règles du jeu ?</p>
+    <button class="eye" type="submit" (click)="showR = !showR"><i class=' {{showR ? eyeO : eyeC }}'></i></button>
+</div>
+<div *ngIf="!showR">
+
+    <h3>Règle du jeu</h3>
+    <p>Tu as le choix entre trois armes : la pierre, la feuille ou les ciseaux.</p>
+    <h3>Comment gagner ?</h3>
+    <ul>
+        <li>La pierre bat les ciseaux.</li>
+        <li>Les ciseaux battent la feuille.</li>
+        <li>la feuille bat la pierre.</li>
+    </ul>
+    <p>Facile, non ? <i class="far fa-smile-beam"></i> </p>
+
+</div>

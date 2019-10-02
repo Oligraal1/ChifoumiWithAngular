@@ -1,1 +1,104 @@
 /* You can add global styles to this file, and also import other style files */
+
+* {
+    box-sizing: border-box;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+[class*="grid-"] {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@for $i from 2 through 12 {
+    .grid-#{$i}>* {
+        width: 100% /$i;
+    }
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+/*********COLOR*********************/
+
+$color-text:#424242;
+$color-title:#6F0404;
+$color-result:rgb(54, 68, 49);
+$color-bg:#E6E6E6;
+
+/*******************FONT*************/
+
+@mixin font () {
+    font-family: 'Raleway', sans-serif;
+}
+
+@mixin font-title () {
+    font-family: 'Permanent Marker', cursive;
+}
+
+@mixin font-hello {
+    font-family: 'Gochi Hand', cursive;
+}
+
+
+/*************MAIN*******************/
+
+.backgrnd {
+    background-image: url(./assets/img/chifoumi.jpg);
+    background-attachment: fixed;
+    background-clip: border-box;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.again {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 20px;
+    border: none;
+    border-radius: 50px;
+    background-color: transparent;
+    .yes,
+    .no {
+        text-decoration: none;
+        background-color: $color-title;
+        border-radius: 5px;
+        text-align: center;
+        @include font();
+        font-size: 1.5rem;
+        box-shadow: 10px 20px 15px $color-text;
+        margin: 0 30px;
+        padding: 10px 15px;
+        color: $color-text;
+    }
+}
+
+.againHide {
+    display: none;
+}
+
+.bye {
+    text-align: center;
+    padding: 30px 0 100px;
+}
+
+.countOff {
+    display: none;
+}
+
+.result {
+    color: $color-result;
+    font-size: 2rem;
+    font-weight: normal;
+    @include font-title();
+}

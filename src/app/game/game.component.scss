@@ -1,0 +1,212 @@
+/*********COLOR*********************/
+
+$color-text:#424242;
+$color-title:#6F0404;
+$color-result:rgb(54, 68, 49);
+$color-bg:#E6E6E6;
+
+/*******************FONT*************/
+
+@mixin font () {
+    font-family: 'Raleway', sans-serif;
+}
+
+@mixin font-title () {
+    font-family: 'Permanent Marker', cursive;
+}
+
+@mixin font-hello {
+    font-family: 'Gochi Hand', cursive;
+}
+
+
+/*************MAIN*******************/
+
+.main {
+    background-color: $color-bg;
+    opacity: 0.9;
+    margin: 0 -10px 0 -10px;
+    h2 {
+        margin: 25px 0 0;
+        padding: 50px 0 0;
+        @include font-title();
+        color: $color-title;
+        font-size: 2.5rem;
+        font-weight: normal;
+        text-align: center;
+    }
+    .green {
+        color: $color-result;
+    }
+    .hide {
+        display: none;
+    }
+    .connect {
+        padding: 20px 50px;
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: none;
+            border-radius: 5px;
+            padding: 50px;
+            label {
+                @include font();
+                font-size: 1.5rem;
+                color: $color-text;
+                margin: 25px 0;
+            }
+            .name {
+                margin: 25px 0;
+                padding: 15px 10px;
+                border-radius: 5px;
+                @include font-hello();
+                font-size: 2rem;
+                color: $color-text;
+            }
+            .submit {
+                background-image: url(../../assets/img/ok_button.jpg);
+                background-size: cover;
+                width: 50px;
+                height: 50px;
+                border-radius: 50px;
+            }
+        }
+        .hello {
+            margin-top: 20px;
+            @include font-hello();
+            font-size: 2rem;
+            color: $color-text;
+            text-align: center;
+        }
+        .countName {
+            @include font();
+            font-size: 1.3rem;
+            text-align: center;
+            color: $color-text;
+        }
+    }
+    .jeu {
+        h3 {
+            @include font-title();
+            color: $color-text;
+            font-size: 1.5rem;
+            font-weight: normal;
+        }
+        p {
+            @include font();
+            color: $color-text;
+            font-size: 1.5rem;
+            text-align: left;
+        }
+        ul {
+            margin-bottom: 50px;
+        }
+        li {
+            list-style: none;
+            @include font();
+            color: $color-text;
+            font-size: 1.5rem;
+            text-align: left;
+        }
+        .launch {
+            display: block;
+            padding: 0 40px 40px;
+        }
+    }
+    .weapons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-end;
+        border: none;
+        img {
+            width: 150px;
+        }
+    }
+    .arme {
+        display: flex;
+        flex-direction: column;
+        margin: 35px 0;
+        padding: 10px 15px;
+    }
+    label {
+        @include font();
+        color: $color-title;
+        font-size: 1.5rem;
+    }
+    .letsGo {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        .center {
+            @include font-title();
+            text-align: center;
+        }
+    }
+    .launchOff {
+        display: none;
+    }
+    .button {
+        padding: 0 0 25px;
+        width: 75px;
+        height: 75px;
+        border-radius: 75px;
+        background-image: url(../../assets/img/go_button.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .button:hover {
+        /*EFFETS BOUNCE*/
+        animation: bounce 1.5s cubic-bezier(0, 0, 0.23, 1) infinite alternate;
+        @keyframes bounce {
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-30px);
+            }
+            60% {
+                transform: translateY(-15px);
+            }
+        }
+    }
+    .fight {
+        padding: 0 40px 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        p {
+            text-align: center;
+        }
+    }
+    .hideFight {
+        display: none;
+    }
+    .count {
+        display: block;
+        width: 60px;
+        margin: 20px auto;
+        padding: 14px;
+        border: 1px solid $color-result;
+        border-radius: 120px;
+        // background-color: $color-title;
+        @include font();
+        color: $color-bg;
+        text-align: center;
+    }
+    .val {
+        display: block;
+        margin: 0 auto;
+    }
+    .YN {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}

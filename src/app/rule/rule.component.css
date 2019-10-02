@@ -1,0 +1,65 @@
+/*********COLOR*********************/
+/*******************FONT*************/
+/***********RULE****************/
+.rule {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.rule button {
+  border: none;
+  background-color: #E6E6E6;
+}
+
+.rule .eye {
+  padding: 0 2px;
+  margin: 0 2px;
+  font-size: 1.5rem;
+  color: #6F0404;
+}
+
+.showRule {
+  display: block;
+}
+
+.showRule h3 {
+  font-size: 1rem;
+}
+
+.showRule p {
+  font-size: 1rem;
+}
+
+.showRule p i {
+  color: #6F0404;
+}
+
+.showRule li {
+  font-size: 1rem;
+}
+
+.hideRule {
+  display: none;
+}
+
+.ruleClose {
+  margin: 0 0 0 150px;
+  border: none;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
+  color: #424242;
+  border-radius: 20px;
+}
+
+.ruleClose i {
+  color: #6F0404;
+}
+/*# sourceMappingURL=rule.component.css.map */

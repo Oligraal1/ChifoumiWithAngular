@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Accueil-Chifoumi</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Gochi+Hand|Permanent+Marker|Raleway" rel="stylesheet">
+    <!-- Librairie jQuery -->
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Chifoumi</h1>
+    </header>
+    <main class="container">
+        <section class="connect">
+                <?php if(!isset($_POST["yourName"])) :?>
+                <form action="index.phtml" method="POST">
+                    <label for="yourName">Comment vous appelez-vous ?</label>
+                    <input type="text" class="name" name="yourName">
+                    <input class="submit" type="image" value="ok" src="img/ok_button.jpg">
+                </form>
+                <?php endif; ?>
+                <?php if(isset($_POST["yourName"])):?>
+                <p class="hello">
+                   <?="Bonjour ".$_POST["yourName"];
+                    ?>
+                </p>
+<?php endif; ?>
+            <!--<form action="index.php" method="POST">
+                <label for="name">Comment vous appelez-vous ?</label>
+                <input class="name" type="text" name="name">
+                <input class="submit" type="image" value="ok" src="img/ok_button.jpg">
+            </form>
+            p pour mettre bonjour x nous sommes le date en php-->
+        </section>
+        <section class="jeu">
+            <article>
+                <h2 class="play">Jouons ensemble</h2>
+                <div class="launch">
+                    <h3>Règle du jeu</h3>
+                    <p>Vous avez le choix entre trois armes : la pierre, la feuille ou les ciseaux.</p>
+                    <h3>Comment gagner ?</h3>
+                    <ul>
+                        <li>La pierre bat les ciseaux.</li>
+                        <li>Les ciseaux battent la feuille.</li>
+                        <li>la feuille bat la pierre.</li>
+                    </ul>
+                    <h3>Choisissez votre arme</h3>
+                    <form class="weapons" action="#" method="POST">
+                        <fieldset name="weapon" id="weapon">
+                            <div><input type="radio" class="armes" id="pierre" name="armes" value="pierre">
+                            <label class="armes" for="armes">Pierre</label></div>
+                            <div><input type="radio" class="armes" id="feuille" name="armes" value="feuille">
+                            <label class="armes" for="armes">Feuille</label></div>
+                            <div><input type="radio" class="armes" id="ciseaux" name="armes" value="ciseaux">
+                            <label class="armes" for="ciseaux">Ciseaux</label>
+                        </div>
+                        </fieldset>
+                    </form>
+                    <div class="letsGo">
+                        <p class="center">Cette fois, c'est parti. Cliquez sur le bouton</p>
+                        <button class="go button" type="button"></button>
+                    </div>
+
+                </div>
+            </article>
+            <article class="fight">
+                <p class="countOff"><span></span></p>
+                <p class="userChoice"></p>
+                <p class="ordiChoice"></p>
+                <p class="result"></p>
+            </article>
+    </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="chifoumi.js"></script>
+</body>
+</html>

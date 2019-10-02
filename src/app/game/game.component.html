@@ -1,0 +1,77 @@
+<div class="main">
+    <section class="jeu container">
+        <article>
+            <h2 class="play">Jouons ensemble</h2>
+            <app-rule></app-rule>
+        </article>
+        <div class="launch">
+            <article>
+                <h3>Choisis ton arme</h3>
+                <form [formGroup]="formGame">
+
+                    <div class="form-group weapons">
+                        <figure class="arme">
+                            <img src="../../assets/img/pierre.png" alt="pierre">
+                            <figcaption>
+                                <label for="armes">Pierre&nbsp;</label>
+                                <input type="radio" class="armes" id="pierre" formControlName="armes" value="pierre">
+                            </figcaption>
+                        </figure>
+
+                        <figure class="arme">
+                            <img src="../../assets/img/feuille.png" alt="papier">
+                            <figcaption>
+                                <label for="armes">Feuille&nbsp;</label>
+                                <input type="radio" class="armes" id="feuille" formControlName="armes" value="feuille">
+                            </figcaption>
+                        </figure>
+
+                        <figure class="arme">
+                            <img src="../../assets/img/ciseaux.png" alt="ciseaux">
+                            <figcaption>
+                                <label for="ciseaux">Ciseaux&nbsp;</label>
+                                <input type="radio" class="armes" id="ciseaux" formControlName="armes" value="ciseaux">
+                            </figcaption>
+                        </figure>
+
+                    </div>
+                    <button [disabled]="formGame.invalid" class="val btn btn-outline-dark my-2 my-sm-0 " type="submit" (click)="onSubmit()">Valide ton choix</button>
+                </form>
+
+                <!-- <div class="letsGo">
+                    <p class="center">Cette fois, c'est parti. Cliquez sur le bouton</p>
+                    <button class="go button" type="image"></button>
+                </div> -->
+            </article>
+
+            <article class="fight">
+                <div *ngIf="player">
+
+
+                    <p [@openClose]="isOpen ? 'open' : 'closed'" class="count">{{ start }}</p>
+                    <p class="userChoice">Tu as choisi : {{ player }} </p>
+                    <div *ngIf="start===0">
+                        <p class="ordiChoice">L'ordinateur a choisi : {{ computer }}</p>
+                        <div>
+                            <ng-container *ngIf="r == true ; else elseTemplate">
+                                <p ng class="result text-success">{{ result }}</p>
+                            </ng-container>
+                            <ng-template #elseTemplate>
+                                <p ng class="result text-danger">{{ result }}</p>
+                            </ng-template>
+
+                        </div>
+
+                        <p class="playAgain">Veux-tu rejouer avec moi ?</p>
+                        <div class='YN'>
+                            <a href="./game.component.html"><button class="yes btn btn-dark" type="submit">Oui</button></a>
+                            <button class="no btn btn-danger" type="submit">Non</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </article>
+            <p class="bye"></p>
+
+        </div>

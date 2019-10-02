@@ -1,0 +1,32 @@
+/*********COLOR*********************/
+/*******************FONT*************/
+/***********HEADER*************************/
+header {
+  background-color: #424242;
+  opacity: 0.8;
+  margin: -10px -10px 150px -10px;
+  padding: 20px 0;
+}
+
+header h1 {
+  text-align: center;
+}
+
+header h1 .title {
+  font-family: 'Permanent Marker', cursive;
+  color: #E6E6E6;
+  font-size: 5rem;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+header .disconnect {
+  display: block;
+  text-decoration: none;
+  color: #E6E6E6;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.3rem;
+  text-align: right;
+  margin-right: 20px;
+}
+/*# sourceMappingURL=header.component.css.map */

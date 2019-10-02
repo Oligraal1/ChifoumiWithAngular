@@ -1,0 +1,282 @@
+/*********COLOR*********************/
+/*******************FONT*************/
+/*************MAIN*******************/
+.main {
+  background-color: #E6E6E6;
+  opacity: 0.9;
+  margin: 0 -10px 0 -10px;
+}
+
+.main h2 {
+  margin: 25px 0 0;
+  padding: 50px 0 0;
+  font-family: 'Permanent Marker', cursive;
+  color: #6F0404;
+  font-size: 2.5rem;
+  font-weight: normal;
+  text-align: center;
+}
+
+.main .green {
+  color: #364431;
+}
+
+.main .hide {
+  display: none;
+}
+
+.main .connect {
+  padding: 20px 50px;
+}
+
+.main .connect form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  border-radius: 5px;
+  padding: 50px;
+}
+
+.main .connect form label {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5rem;
+  color: #424242;
+  margin: 25px 0;
+}
+
+.main .connect form .name {
+  margin: 25px 0;
+  padding: 15px 10px;
+  border-radius: 5px;
+  font-family: 'Gochi Hand', cursive;
+  font-size: 2rem;
+  color: #424242;
+}
+
+.main .connect form .submit {
+  background-image: url(../../assets/img/ok_button.jpg);
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+
+.main .connect .hello {
+  margin-top: 20px;
+  font-family: 'Gochi Hand', cursive;
+  font-size: 2rem;
+  color: #424242;
+  text-align: center;
+}
+
+.main .connect .countName {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.3rem;
+  text-align: center;
+  color: #424242;
+}
+
+.main .jeu h3 {
+  font-family: 'Permanent Marker', cursive;
+  color: #424242;
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+.main .jeu p {
+  font-family: 'Raleway', sans-serif;
+  color: #424242;
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+.main .jeu ul {
+  margin-bottom: 50px;
+}
+
+.main .jeu li {
+  list-style: none;
+  font-family: 'Raleway', sans-serif;
+  color: #424242;
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+.main .jeu .launch {
+  display: block;
+  padding: 0 40px 40px;
+}
+
+.main .weapons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  border: none;
+}
+
+.main .weapons img {
+  width: 150px;
+}
+
+.main .arme {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 35px 0;
+  padding: 10px 15px;
+}
+
+.main label {
+  font-family: 'Raleway', sans-serif;
+  color: #6F0404;
+  font-size: 1.5rem;
+}
+
+.main .letsGo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.main .letsGo .center {
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+}
+
+.main .launchOff {
+  display: none;
+}
+
+.main .button {
+  padding: 0 0 25px;
+  width: 75px;
+  height: 75px;
+  border-radius: 75px;
+  background-image: url(../../assets/img/go_button.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.main .button:hover {
+  /*EFFETS BOUNCE*/
+  -webkit-animation: bounce 1.5s cubic-bezier(0, 0, 0.23, 1) infinite alternate;
+          animation: bounce 1.5s cubic-bezier(0, 0, 0.23, 1) infinite alternate;
+}
+
+@-webkit-keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
+}
+
+.main .fight {
+  padding: 0 40px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .fight p {
+  text-align: center;
+}
+
+.main .hideFight {
+  display: none;
+}
+
+.main .count {
+  display: block;
+  width: 60px;
+  margin: 20px auto;
+  padding: 14px;
+  border: 1px solid #364431;
+  border-radius: 120px;
+  font-family: 'Raleway', sans-serif;
+  color: #E6E6E6;
+  text-align: center;
+}
+
+.main .val {
+  display: block;
+  margin: 0 auto;
+}
+
+.main .YN {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+/*# sourceMappingURL=game.component.css.map */

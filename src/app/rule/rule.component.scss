@@ -1,0 +1,71 @@
+/*********COLOR*********************/
+
+$color-text:#424242;
+$color-title:#6F0404;
+$color-result:rgb(54, 68, 49);
+$color-bg:#E6E6E6;
+
+/*******************FONT*************/
+
+@mixin font () {
+    font-family: 'Raleway', sans-serif;
+}
+
+@mixin font-title () {
+    font-family: 'Permanent Marker', cursive;
+}
+
+@mixin font-hello {
+    font-family: 'Gochi Hand', cursive;
+}
+
+
+/***********RULE****************/
+
+.rule {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    button {
+        border: none;
+        background-color: $color-bg;
+    }
+    .eye {
+        padding: 0 2px;
+        margin: 0 2px;
+        font-size: 1.5rem;
+        color: $color-title;
+    }
+}
+
+.showRule {
+    display: block;
+    h3 {
+        font-size: 1rem;
+    }
+    p {
+        font-size: 1rem;
+        i {
+            color: $color-title;
+        }
+    }
+    li {
+        font-size: 1rem;
+    }
+}
+
+.hideRule {
+    display: none;
+}
+
+.ruleClose {
+    margin: 0 0 0 150px;
+    border: none;
+    @include font();
+    font-size: 1rem;
+    color: $color-text;
+    border-radius: 20px;
+    i {
+        color: $color-title;
+    }
+}

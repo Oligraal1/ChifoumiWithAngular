@@ -1,0 +1,22 @@
+/*********COLOR*********************/
+/*******************FONT*************/
+/**********FOOTER**********************/
+footer {
+  background-color: #424242;
+  opacity: 0.8;
+  margin: 150px -10px -50px -10px;
+  padding: 200px 0 0;
+}
+
+footer p {
+  font-size: 0.8rem;
+  font-family: 'Raleway', sans-serif;
+  color: #E6E6E6;
+  text-align: right;
+  margin-bottom: 0;
+}
+
+footer p i {
+  color: #6F0404;
+}
+/*# sourceMappingURL=footer.component.css.map */
