@@ -1,7 +1,11 @@
 /*********COLOR*********************/
 /*******************FONT*************/
 /***********RULE****************/
-.rule {
+.rules {
+  padding: 20px 0;
+}
+
+.rules .rule {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12,45 +16,50 @@
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  margin: 50px 0;
 }
 
-.rule button {
+.rules .rule button {
   border: none;
   background-color: #E6E6E6;
 }
 
-.rule .eye {
-  padding: 0 2px;
-  margin: 0 2px;
+.rules .rule .eye {
+  padding: 0 5px;
+  margin: 0 5px;
   font-size: 1.5rem;
   color: #6F0404;
 }
 
-.showRule {
+.rules .showRule {
   display: block;
+  margin-bottom: 50px;
+  padding: 15px;
+  border: 3px outset #6F0404;
 }
 
-.showRule h3 {
+.rules .showRule h3 {
+  font-size: 1.2rem;
+}
+
+.rules .showRule p {
   font-size: 1rem;
 }
 
-.showRule p {
-  font-size: 1rem;
-}
-
-.showRule p i {
+.rules .showRule p i {
   color: #6F0404;
 }
 
-.showRule li {
+.rules .showRule li {
   font-size: 1rem;
+  list-style: square;
 }
 
-.hideRule {
+.rules .hideRule {
   display: none;
 }
 
-.ruleClose {
+.rules .ruleClose {
   margin: 0 0 0 150px;
   border: none;
   font-family: 'Raleway', sans-serif;
@@ -59,7 +68,7 @@
   border-radius: 20px;
 }
 
-.ruleClose i {
+.rules .ruleClose i {
   color: #6F0404;
 }
 /*# sourceMappingURL=rule.component.css.map */

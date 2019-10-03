@@ -67,6 +67,10 @@
   margin: 0 auto;
 }
 
+li {
+  list-style: none;
+}
+
 /*********COLOR*********************/
 /*******************FONT*************/
 /*************MAIN*******************/
@@ -94,21 +98,6 @@
   border: none;
   border-radius: 50px;
   background-color: transparent;
-}
-
-.again .yes,
-.again .no {
-  text-decoration: none;
-  background-color: #6F0404;
-  border-radius: 5px;
-  text-align: center;
-  font-family: 'Raleway', sans-serif;
-  font-size: 1.5rem;
-  -webkit-box-shadow: 10px 20px 15px #424242;
-          box-shadow: 10px 20px 15px #424242;
-  margin: 0 30px;
-  padding: 10px 15px;
-  color: #424242;
 }
 
 .againHide {

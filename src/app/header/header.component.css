@@ -29,4 +29,11 @@ header .disconnect {
   text-align: right;
   margin-right: 20px;
 }
+
+header nav a {
+  text-decoration: none;
+  color: #E6E6E6;
+  font-size: 1.5rem;
+  font-weight: normal;
+}
 /*# sourceMappingURL=header.component.css.map */

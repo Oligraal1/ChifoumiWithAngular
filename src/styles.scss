@@ -25,7 +25,9 @@
     width: 80%;
     margin: 0 auto;
 }
-
+li {
+    list-style: none;
+}
 
 /*********COLOR*********************/
 
@@ -68,19 +70,19 @@ $color-bg:#E6E6E6;
     border: none;
     border-radius: 50px;
     background-color: transparent;
-    .yes,
-    .no {
-        text-decoration: none;
-        background-color: $color-title;
-        border-radius: 5px;
-        text-align: center;
-        @include font();
-        font-size: 1.5rem;
-        box-shadow: 10px 20px 15px $color-text;
-        margin: 0 30px;
-        padding: 10px 15px;
-        color: $color-text;
-    }
+    // .yes,
+    // .no {
+    //     text-decoration: none;
+    //     background-color: $color-title;
+    //     border-radius: 5px;
+    //     text-align: center;
+    //     @include font();
+    //     font-size: 1.5rem;
+    //     box-shadow: 10px 20px 15px $color-text;
+    //     margin: 0 30px;
+    //     padding: 10px 15px;
+    //     color: $color-text;
+    // }
 }
 
 .againHide {

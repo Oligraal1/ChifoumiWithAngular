@@ -1,11 +1,11 @@
-<div class="main">
+
     <section class="jeu container">
         <article>
             <h2 class="play">Jouons ensemble</h2>
             <app-rule></app-rule>
         </article>
         <div class="launch">
-            <article>
+            <article *ngIf="!player">
                 <h3>Choisis ton arme</h3>
                 <form [formGroup]="formGame">
 
@@ -36,17 +36,15 @@
 
                     </div>
                     <button [disabled]="formGame.invalid" class="val btn btn-outline-dark my-2 my-sm-0 " type="submit" (click)="onSubmit()">Valide ton choix</button>
-                </form>
 
-                <!-- <div class="letsGo">
-                    <p class="center">Cette fois, c'est parti. Cliquez sur le bouton</p>
-                    <button class="go button" type="image"></button>
-                </div> -->
+                </form>
             </article>
 
             <article class="fight">
-                <div *ngIf="player">
-
+                <div class="notValid" *ngIf="!player">
+                    <p>{{valid}}</p>
+                </div>
+                <div *ngIf="player && !message">
 
                     <p [@openClose]="isOpen ? 'open' : 'closed'" class="count">{{ start }}</p>
                     <p class="userChoice">Tu as choisi : {{ player }} </p>
@@ -64,14 +62,19 @@
 
                         <p class="playAgain">Veux-tu rejouer avec moi ?</p>
                         <div class='YN'>
-                            <a href="./game.component.html"><button class="yes btn btn-dark" type="submit">Oui</button></a>
-                            <button class="no btn btn-danger" type="submit">Non</button>
+                             <button (click)="yes()" class="yes btn btn-dark"  type="submit">Oui</button>
+                           
+                               
+                           
+                                
+                            <button (click)="no()" class="no btn btn-danger" type="submit">Non</button>
                         </div>
                     </div>
 
                 </div>
 
             </article>
-            <p class="bye"></p>
-
-        </div>
+            <p *ngIf="message" class="bye text-center">{{ message }}</p>
+            
+       
+        

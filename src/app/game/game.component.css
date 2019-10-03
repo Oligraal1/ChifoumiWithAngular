@@ -1,13 +1,7 @@
 /*********COLOR*********************/
 /*******************FONT*************/
 /*************MAIN*******************/
-.main {
-  background-color: #E6E6E6;
-  opacity: 0.9;
-  margin: 0 -10px 0 -10px;
-}
-
-.main h2 {
+h2 {
   margin: 25px 0 0;
   padding: 50px 0 0;
   font-family: 'Permanent Marker', cursive;
@@ -17,19 +11,19 @@
   text-align: center;
 }
 
-.main .green {
+.green {
   color: #364431;
 }
 
-.main .hide {
+.hide {
   display: none;
 }
 
-.main .connect {
+.connect {
   padding: 20px 50px;
 }
 
-.main .connect form {
+.connect form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -45,14 +39,14 @@
   padding: 50px;
 }
 
-.main .connect form label {
+.connect form label {
   font-family: 'Raleway', sans-serif;
   font-size: 1.5rem;
   color: #424242;
   margin: 25px 0;
 }
 
-.main .connect form .name {
+.connect form .name {
   margin: 25px 0;
   padding: 15px 10px;
   border-radius: 5px;
@@ -61,7 +55,7 @@
   color: #424242;
 }
 
-.main .connect form .submit {
+.connect form .submit {
   background-image: url(../../assets/img/ok_button.jpg);
   background-size: cover;
   width: 50px;
@@ -69,7 +63,7 @@
   border-radius: 50px;
 }
 
-.main .connect .hello {
+.connect .hello {
   margin-top: 20px;
   font-family: 'Gochi Hand', cursive;
   font-size: 2rem;
@@ -77,32 +71,32 @@
   text-align: center;
 }
 
-.main .connect .countName {
+.connect .countName {
   font-family: 'Raleway', sans-serif;
   font-size: 1.3rem;
   text-align: center;
   color: #424242;
 }
 
-.main .jeu h3 {
+.jeu h3 {
   font-family: 'Permanent Marker', cursive;
   color: #424242;
   font-size: 1.5rem;
   font-weight: normal;
 }
 
-.main .jeu p {
+.jeu p {
   font-family: 'Raleway', sans-serif;
   color: #424242;
   font-size: 1.5rem;
   text-align: left;
 }
 
-.main .jeu ul {
+.jeu ul {
   margin-bottom: 50px;
 }
 
-.main .jeu li {
+.jeu li {
   list-style: none;
   font-family: 'Raleway', sans-serif;
   color: #424242;
@@ -110,12 +104,12 @@
   text-align: left;
 }
 
-.main .jeu .launch {
+.jeu .launch {
   display: block;
   padding: 0 40px 40px;
 }
 
-.main .weapons {
+.weapons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -131,11 +125,11 @@
   border: none;
 }
 
-.main .weapons img {
+.weapons img {
   width: 150px;
 }
 
-.main .arme {
+.arme {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -147,13 +141,13 @@
   padding: 10px 15px;
 }
 
-.main label {
+label {
   font-family: 'Raleway', sans-serif;
   color: #6F0404;
   font-size: 1.5rem;
 }
 
-.main .letsGo {
+.letsGo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -165,16 +159,16 @@
       justify-content: space-around;
 }
 
-.main .letsGo .center {
+.letsGo .center {
   font-family: 'Permanent Marker', cursive;
   text-align: center;
 }
 
-.main .launchOff {
+.launchOff {
   display: none;
 }
 
-.main .button {
+.button {
   padding: 0 0 25px;
   width: 75px;
   height: 75px;
@@ -184,7 +178,7 @@
   background-repeat: no-repeat;
 }
 
-.main .button:hover {
+.button:hover {
   /*EFFETS BOUNCE*/
   -webkit-animation: bounce 1.5s cubic-bezier(0, 0, 0.23, 1) infinite alternate;
           animation: bounce 1.5s cubic-bezier(0, 0, 0.23, 1) infinite alternate;
@@ -228,7 +222,7 @@
   }
 }
 
-.main .fight {
+.fight {
   padding: 0 40px 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -242,15 +236,25 @@
           align-items: center;
 }
 
-.main .fight p {
+.fight p {
   text-align: center;
 }
 
-.main .hideFight {
+.fight .notValid {
+  margin: 20px 0;
+  padding: 25px 0;
+}
+
+.fight .notValid p {
+  font-size: 0.9rem;
+  color: #6F0404;
+}
+
+.hideFight {
   display: none;
 }
 
-.main .count {
+.count {
   display: block;
   width: 60px;
   margin: 20px auto;
@@ -262,12 +266,12 @@
   text-align: center;
 }
 
-.main .val {
+.val {
   display: block;
   margin: 0 auto;
 }
 
-.main .YN {
+.YN {
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;

@@ -21,51 +21,58 @@ $color-bg:#E6E6E6;
 
 
 /***********RULE****************/
-
-.rule {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    button {
-        border: none;
-        background-color: $color-bg;
-    }
-    .eye {
-        padding: 0 2px;
-        margin: 0 2px;
-        font-size: 1.5rem;
-        color: $color-title;
-    }
-}
-
-.showRule {
-    display: block;
-    h3 {
-        font-size: 1rem;
-    }
-    p {
-        font-size: 1rem;
-        i {
+.rules {
+    padding: 20px 0;
+    .rule {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin: 50px 0;
+        button {
+            border: none;
+            background-color: $color-bg;
+        }
+        .eye {
+            padding: 0 5px;
+            margin: 0 5px;
+            font-size: 1.5rem;
             color: $color-title;
         }
     }
-    li {
-        font-size: 1rem;
+    
+    .showRule {
+        display: block;
+        margin-bottom: 50px;
+        padding: 15px;
+        border: 3px outset $color-title;
+        h3 {
+            font-size: 1.2rem;
+        }
+        p {
+            font-size: 1rem;
+            i {
+                color: $color-title;
+            }
+        }
+        li {
+            font-size: 1rem;
+            list-style: square;
+        }
     }
-}
-
-.hideRule {
-    display: none;
-}
-
-.ruleClose {
-    margin: 0 0 0 150px;
-    border: none;
-    @include font();
-    font-size: 1rem;
-    color: $color-text;
-    border-radius: 20px;
-    i {
-        color: $color-title;
+    
+    .hideRule {
+        display: none;
+    }
+    
+    .ruleClose {
+        margin: 0 0 0 150px;
+        border: none;
+        @include font();
+        font-size: 1rem;
+        color: $color-text;
+        border-radius: 20px;
+        i {
+            color: $color-title;
+        }
     }
 }

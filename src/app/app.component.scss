@@ -1,0 +1,28 @@
+/*********COLOR*********************/
+
+$color-text:#424242;
+$color-title:#6F0404;
+$color-result:rgb(54, 68, 49);
+$color-bg:#E6E6E6;
+
+/*******************FONT*************/
+
+@mixin font () {
+    font-family: 'Raleway', sans-serif;
+}
+
+@mixin font-title () {
+    font-family: 'Permanent Marker', cursive;
+}
+
+@mixin font-hello {
+    font-family: 'Gochi Hand', cursive;
+}
+
+
+/*************MAIN*******************/
+.main {
+    background-color: $color-bg;
+    opacity: 0.9;
+    margin: 0 -10px 0 -10px;
+}
