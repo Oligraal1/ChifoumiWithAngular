@@ -11,7 +11,7 @@
 
                     <div class="form-group weapons">
                         <figure class="arme">
-                            <img src="../../assets/img/pierre.png" alt="pierre">
+                            <img src="assets/img/pierre.png" alt="pierre">
                             <figcaption>
                                 <label for="armes">Pierre&nbsp;</label>
                                 <input type="radio" class="armes" id="pierre" formControlName="armes" value="pierre">
@@ -19,7 +19,7 @@
                         </figure>
 
                         <figure class="arme">
-                            <img src="../../assets/img/feuille.png" alt="papier">
+                            <img src="assets/img/feuille.png" alt="papier">
                             <figcaption>
                                 <label for="armes">Feuille&nbsp;</label>
                                 <input type="radio" class="armes" id="feuille" formControlName="armes" value="feuille">
@@ -27,7 +27,7 @@
                         </figure>
 
                         <figure class="arme">
-                            <img src="../../assets/img/ciseaux.png" alt="ciseaux">
+                            <img src="assets/img/ciseaux.png" alt="ciseaux">
                             <figcaption>
                                 <label for="ciseaux">Ciseaux&nbsp;</label>
                                 <input type="radio" class="armes" id="ciseaux" formControlName="armes" value="ciseaux">
@@ -63,10 +63,10 @@
                         <p class="playAgain">Veux-tu rejouer avec moi ?</p>
                         <div class='YN'>
                              <button (click)="yes()" class="yes btn btn-dark"  type="submit">Oui</button>
-                           
-                               
-                           
-                                
+
+
+
+
                             <button (click)="no()" class="no btn btn-danger" type="submit">Non</button>
                         </div>
                     </div>
@@ -75,6 +75,5 @@
 
             </article>
             <p *ngIf="message" class="bye text-center">{{ message }}</p>
-            
-       
-        
+
+

@@ -62,7 +62,7 @@ $color-bg:#E6E6E6;
                 color: $color-text;
             }
             .submit {
-                background-image: url(../../assets/img/ok_button.jpg);
+                background-image: url(/assets/img/ok_button.jpg);
                 background-size: cover;
                 width: 50px;
                 height: 50px;
@@ -149,7 +149,7 @@ $color-bg:#E6E6E6;
         width: 75px;
         height: 75px;
         border-radius: 75px;
-        background-image: url(../../assets/img/go_button.jpg);
+        background-image: url(/img/go_button.jpg);
         background-size: contain;
         background-repeat: no-repeat;
     }
@@ -183,7 +183,7 @@ $color-bg:#E6E6E6;
         .notValid{
             margin: 20px 0;
             padding: 25px 0;
-            
+
             p{
                 font-size: 0.9rem;
                 color:$color-title;
